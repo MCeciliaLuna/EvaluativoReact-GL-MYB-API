@@ -16,10 +16,10 @@ app.use("/", routes)
 
 app.get('/', (req,res) => {
   res.json({
-    message: "GET funcionando"
+    message: "Working API WeLearnWeb! 🚀"
   })
 })
 
 app.listen(port, () => {
-  console.log('Back funcionando en puerto ' + port)
+  console.log('✅ API working on port ' + port)
 })

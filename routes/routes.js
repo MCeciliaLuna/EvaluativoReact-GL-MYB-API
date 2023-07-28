@@ -1,12 +1,12 @@
 const { Router } = require("express");
-const { traerProductos, crearProducto, modificarProducto , eliminarProducto } = require('../controllers/productos')
+const { getComments, createComments, voteComment, deleteComment } = require('../controllers/comment')
 const router = Router();
 
 
-router.get("/traerproductos", traerProductos);
-router.post("/crearproducto", crearProducto);
-router.delete("/eliminarproducto/:_id", eliminarProducto);
-router.put("/modificarproducto", modificarProducto);
+router.get("/getComments", getComments);
+router.post("/createComments", createComments);
+router.put("/voteComment", voteComment);
+router.delete("/deleteComment/:_id", deleteComment);
 
 
 module.exports = router;
